@@ -77,6 +77,33 @@ header{
     background-size: 100%;
     padding-bottom: 50px;
 }
+
+/* animation  */
+.intro-img:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+
 .intro-button{
     background-color: #E02C6D;
     border-radius: 90px;
@@ -145,6 +172,10 @@ hr{
        padding-bottom: 50px;
        margin: 40px;
    }
+
+
+
+   
    .intro-button{
        background-color: #E02C6D;
        border-radius: 90px;
@@ -221,6 +252,7 @@ hr{
     font-weight: 700;
     color: #787885;
     font-size: 14px;
+    line-height: 5px;
 }
 .product-rating{
     font-size: 10px;
@@ -264,6 +296,51 @@ footer p{
 }
 .mobile-cart{
     display: none;
+}
+.subscribe-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.subscribe-container h1{
+    
+    margin-top: 40px;
+    text-align: center;
+}
+
+.subscribe{
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+.subscribe-detail{
+    color: white;
+    padding-top: 100px;
+    height: 300px;
+    background-color: #E02C6D;
+}
+.subscribe-detail p{
+    font-size: 14px;
+}
+.subscribe-form{
+    border: 4px solid #E02C6D;
+    padding-top: 90px;
+}
+.subscribe-form input{
+    border: 2px solid #E02C6D;
+    border-radius: 5px;
+    padding: 15px 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.subscribe-form input:hover{
+    border: 4px solid #000000;
+}
+body{
+    margin: 0px;
 }
 
 @media (max-width:576px) {
@@ -316,7 +393,7 @@ footer p{
 }
 
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
     
     .intro-container{
         margin-top: 70px;
@@ -432,4 +509,17 @@ margin: 10px;
 .logo{
     text-align: center;
 }
+.subscribe{
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2,2fr);
+    
 }
+.subscribe-container{
+    padding-bottom: 0px;
+}
+
+
+}
+
