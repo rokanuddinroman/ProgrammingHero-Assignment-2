@@ -34,6 +34,11 @@ header{
     font-size: 34px;
     font-weight: 700;
 }
+.active{
+    background: linear-gradient(to right, #FE9090 0%, #E02C6D 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 .menu li{
     font-weight: 600;
     list-style-type:none;
@@ -43,6 +48,11 @@ header{
 .menu a{
     text-decoration: none;
     color: #3A3A3A;
+}
+.menu a:hover{
+    background: linear-gradient(to right, #FE9090 0%, #E02C6D 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 /* ------------
  intro 
