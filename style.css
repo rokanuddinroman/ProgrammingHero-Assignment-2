@@ -519,7 +519,17 @@ margin: 10px;
 .subscribe-container{
     padding-bottom: 0px;
 }
-
+.next-button{
+    width: 300px;
+}
+.next-button a{
+    font-weight: 700;
+    float: right;
+    text-decoration: none;
+    color: #E02C6D;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
 }
 
